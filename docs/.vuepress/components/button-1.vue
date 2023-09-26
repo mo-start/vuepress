@@ -1,15 +1,28 @@
-<!-- <template>
-  <div>button</div>
+<template>
+  <div>
+    <button v-on:click="decrement">-</button>
+    {{ count }}
+    <button v-on:click="increment">+</button>
+  </div>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
+<script>
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
-
+// Define the component in class-style
 @Component
-export default class App extends Vue {}
-</script>
+export default class Counter extends Vue {
+  // Class properties will be component data
+  count = 0
 
-<style lang="scss">
-</style>
-  -->
+  // Methods will be component methods
+  increment() {
+    this.count++
+  }
+
+  decrement() {
+    this.count--
+  }
+}
+</script>

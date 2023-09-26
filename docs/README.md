@@ -10,6 +10,6 @@
 
 # components
 
-<!-- <button-1/> -->
+<button-1/>
 
 <announcement-index :items="[{label: 'label 222'}]" />

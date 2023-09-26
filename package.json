@@ -16,7 +16,7 @@
     "typescript": "5.2.2",
     "vue-property-decorator": "9.1.2",
     "vuepress": "1.9.10",
-    "vuepress-plugin-typescript": "0.3.1"
-  },
-  "dependencies": {}
+    "vuepress-plugin-typescript": "0.3.1",
+    "vue-class-component": "7.2.6"
+  }
 }

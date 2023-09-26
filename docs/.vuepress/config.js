@@ -39,6 +39,14 @@ module.exports = {
   },
   plugins: [
     [
+      'typescript',
+      {
+        tsLoaderOptions: {
+          transpileOnly: true,
+        },
+      },
+    ],
+    [
       'vuepress-plugin-typescript',
       {
         tsLoaderOptions: {
